@@ -12,17 +12,18 @@ body{
 .banner {
     width: 100%;
     height:100vh;
-background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(./assets/background.jpg);
+background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./assets/background.jpg);
 background-size: cover;
 background-position: center;
 }
 .navbar{
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+
 }
 .logo{
     width: 100px;
@@ -52,25 +53,36 @@ background-position: center;
 .navbar ul li:hover::after{
 width: 100%;
 }
+/* part2 */
 .content{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.4);
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
     text-align: center;
     color: #141414;
+    height: 60vh;
+    border-radius: 16px;
 }
 .content h1{
     font-size:70px ;
-    padding-top:80px ;
+    padding:30px ;
     color: #134B70;
+    
 }
 .content p{
-    font-weight: 200;
-    line-height: 25px;
-    color: #fff;
+    font-size:20px;
+    font-weight: 400;
+    line-height: 30px;
+    color:#fff;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
 }
 button{
+    font-size: 20px;
     width: 200;
     padding: 15px 0;
     text-align: center;
